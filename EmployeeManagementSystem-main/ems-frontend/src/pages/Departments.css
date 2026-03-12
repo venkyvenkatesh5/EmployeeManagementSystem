@@ -1,0 +1,175 @@
+.departments-page{
+display:flex;
+background:#f4f6f9;
+height:100vh;
+}
+
+.departments-content{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+/* Header */
+
+.departments-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.departments-title{
+font-size:28px;
+font-weight:600;
+color:#1f2937;
+}
+
+/* Search */
+
+.search-box{
+position:relative;
+width:260px;
+margin-bottom:20px;
+}
+
+.search-input{
+width:100%;
+padding:10px 12px 10px 35px;
+border-radius:8px;
+border:1px solid #ddd;
+outline:none;
+transition:0.3s;
+margin-left: 40px;
+}
+
+.search-input:focus{
+border-color:#6366f1;
+box-shadow:0 0 5px rgba(99,102,241,0.4);
+}
+
+.search-icon{
+position:absolute;
+left:10px;
+top:50%;
+transform:translateY(-50%);
+color:#6b7280;
+}
+
+/* Add button */
+
+.add-btn{
+background:#6366f1;
+color:white;
+padding:10px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.add-btn:hover{
+background:#4f46e5;
+}
+
+/* Table */
+
+.department-table{
+width:100%;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.department-table th{
+background:#f3f4f6;
+padding:12px;
+text-align:left;
+}
+
+.department-table td{
+padding:12px;
+border-top:1px solid #eee;
+}
+
+.department-row:hover{
+background:#f9fafb;
+transition:0.2s;
+}
+.department-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+.department-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+transition:0.3s;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.department-card:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.department-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+
+.department-name{
+font-size:18px;
+font-weight:600;
+color:#1f2937;
+}
+
+.employee-badge{
+display:flex;
+align-items:center;
+gap:5px;
+background:#eef2ff;
+color:#6366f1;
+padding:5px 10px;
+border-radius:20px;
+font-size:14px;
+font-weight: 500;
+}
+
+.department-actions{
+display:flex;
+gap:10px;
+}
+
+.icon-btn{
+border:none;
+padding:8px 10px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+color:white;
+}
+
+.edit-btn{
+background:#3b82f6;
+}
+
+.edit-btn:hover{
+background:#2563eb;
+}
+
+.delete-btn{
+background:#ef4444;
+}
+
+.delete-btn:hover{
+background:#dc2626;
+}
